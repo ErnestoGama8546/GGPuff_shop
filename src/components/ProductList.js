@@ -4,6 +4,7 @@ import Title from "./Title";
 import { storeProducts } from "../data";
 import styled from "styled-components";
 import { ProductConsumer } from "../context";
+
 export default class ProductList extends Component {
   state = {
     products: storeProducts
@@ -13,7 +14,7 @@ export default class ProductList extends Component {
       <React.Fragment>
         <ProductWrapper className="py-5">
           <div className="container">
-            <Title name="our" title="products" />
+            <Title name="Nuestros" title="Productos" />
             <div className="row">
               <ProductConsumer>
                 {value => {

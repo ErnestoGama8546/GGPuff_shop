@@ -1,27 +1,30 @@
 :root {
-  --mainBlue: #2a2a72;
-  --lightBlue: #009ffd;
+  --mainBlue: #A80305;
+  --mainGreen: #57A803;
   --mainWhite: #f3f3f3;
-  --mainDark: #232528;
-  --mainDark: #000;
-  --mainYellow: #ffa400;
+  --mainText: #242121e5;
+  --lightBlue: #009bfa;
+  --mainRed: #000000;
+  --mainYellow: #e6dd33;
 }
 
 body {
-  font-family: "Oswald", sans-serif !important;
-  background: var(--mainWhite) !important;
-  color: var(--mainDark) !important;
+  background-image: url("./waterMark.png") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Lora', serif !important;
+  color: var(--mainText) !important;
 }
 .text-title {
-  font-family: "Permanent Marker", cursive;
+  font-family: 'Libre Baskerville', serif;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
-.text-blue {
-  color: var(--mainBlue);
+.text-green {
+  color: var(--mainGreen);
 }
 .text-bright {
-  color: var(--lightBlue);
+  color: var(--mainGreen);
 }
 .navbar {
   justify-content: flex-start !important;
@@ -32,14 +35,14 @@ body {
   font-size: 0.8rem !important;
   color: var(--mainBlack);
   border-radius: 0 !important;
-  border: 0.1rem solid var(--mainDark) !important;
+  border: 0.1rem solid var(--mainText) !important;
 }
 .btn-black:hover {
-  background: var(--mainDark) !important;
-  color: var(--mainWhite) !important;
+  background: var(--mainText) !important;
+  color: var(--mainGreen) !important;
 }
 .cart-icon {
   cursor: pointer;
   font-size: 1.2rem;
-  color: var(--mainYellow);
+  color: var(--lightBlue);
 }

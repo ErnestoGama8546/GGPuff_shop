@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { ProductConsumer } from "../context";
+
 export default class Product extends Component {
   render() {
     const { id, title, img, price, inCart } = this.props.product;
@@ -28,7 +29,7 @@ export default class Product extends Component {
                   >
                     {inCart ? (
                       <p className="text-capitalize mb-0" disabled>
-                        in cart
+                        en carrito
                       </p>
                     ) : (
                       <i className="fas fa-cart-plus" />
@@ -40,7 +41,7 @@ export default class Product extends Component {
           </ProductConsumer>
           <div className="card-footer d-flex justify-content-between">
             <p className="align-self-center mb-0">{title}</p>
-            <h5 className="text-blue font-italic mb-0">
+            <h5 className="text-green font-italic mb-0">
               <span className="mr-1">$</span>
               {price}
             </h5>
@@ -85,7 +86,7 @@ const ProductWrapper = styled.div`
     bottom: 0;
     right: 0;
     padding: 0.2rem 0.4rem;
-    background: var(--lightBlue);
+    background: var(--mainGreen);
     border: none;
     color: var(--mainWhite);
     font-size: 1.4rem;
@@ -97,7 +98,7 @@ const ProductWrapper = styled.div`
     transform: translate(0, 0);
   }
   .cart-btn:hover {
-    color: var(--mainBlue);
-    cursor: pointer;
+    color: var(--mainYellow);
+    cursor: grabbing;
   }
 `;

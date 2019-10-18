@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PayPalButton from "./PayPalButton";
 import { Link } from "react-router-dom";
+
 export default class CartTotals extends Component {
   render() {
     const {
@@ -26,19 +27,19 @@ export default class CartTotals extends Component {
                       clearCart();
                     }}
                   >
-                    clear cart
+                    Borrar Carrito
                   </button>
                 </Link>
                 <h5>
-                  <span className="text-title"> subtotal :</span>{" "}
+                  <span className="text-title"> Subtotal :</span>{" "}
                   <strong>$ {cartSubTotal} </strong>
                 </h5>
                 <h5>
-                  <span className="text-title"> tax :</span>{" "}
+                  <span className="text-title"> IVA :</span>{" "}
                   <strong>$ {cartTax} </strong>
                 </h5>
                 <h5>
-                  <span className="text-title"> total :</span>{" "}
+                  <span className="text-title"> Total :</span>{" "}
                   <strong>$ {cartTotal} </strong>
                 </h5>
                 <PayPalButton
